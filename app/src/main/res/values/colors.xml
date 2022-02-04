@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme -->
+    <color name="colorPrimary">#DA5F0E</color>
+    <color name="colorSecondary">#DD9313</color>
+    <color name="colorTertiary">#DC380F</color>
+    <color name="colorTertiaryShadow">@color/colorTertiary</color>
+    <color name="textColorSecondary">#DC360C</color>
+    <color name="textColorSecondaryShadow">@color/textColorSecondary</color>
+    <color name="colorBackGround">@color/black</color>>
+    <color name="textInputLayoutBorder">@color/colorTertiary</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

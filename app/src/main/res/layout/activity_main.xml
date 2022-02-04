@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_main_calcul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="@dimen/main_margin_side_screen"
+        android:layout_marginTop="@dimen/main_margin_top_screen"
+        android:gravity="end"
+        android:maxLength="16"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/main_size_text_calcul_screen" />
+
+    <TextView
+        android:id="@+id/tv_main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_size_text"
+        android:layout_marginHorizontal="@dimen/main_margin_side_screen"
+        android:layout_marginTop="@dimen/main_margin_top_second_screen"
+        android:gravity="end"
+        android:maxLength="11"
+        android:layout_alignParentTop="true"/>
+
+    <TableLayout
+        android:id="@+id/TL_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_7"
+                android:textSize="@dimen/main_size_text_bt"
+                />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_8"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_9"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_divise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_division"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_4"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_5"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_6"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_fois"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_multiplication"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_1"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_2"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_3"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_plus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_plus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="supprimer"
+                android:text="@string/bt_ac"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_0"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                style="@style/Widget.Calc.Button"
+                android:id="@+id/bt_signe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_signe"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_moins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_moins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/bt_pourcent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_pourcent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_parenthese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addOperateurs"
+                android:text="@string/bt_parenthese"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="addNumber"
+                android:text="@string/bt_point"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+
+            <Button
+                android:id="@+id/bt_egal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margin_bt"
+                android:onClick="calcule"
+                android:text="@string/bt_egal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_size_text_bt" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

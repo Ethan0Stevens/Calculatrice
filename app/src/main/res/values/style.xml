@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Appplication de base -->
+    <style name="Theme.Calculatrice" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorSecondary</item>
+        <item name="colorOnPrimary">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackGround</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorSecondary</item>
+        <item name="android:textColorTertiary">@color/colorPrimary</item>
+        <item name="android:shadowColor">@color/colorPrimary</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+    </style>
+
+    <!--Bouttons-->
+    <style name="Widget.Calc.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:shadowColor">@color/colorSecondary</item>
+    </style>
+</resources>
